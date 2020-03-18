@@ -20,9 +20,9 @@ routes.post('/devs',  async (request, response) =>{
         name,
         avatar_url,
         bio,
-        techsArray,
+        techs: techsArray,
     });
-   // console.log(name,avatar_url, bio, github_username);
+   console.log(name,avatar_url, bio, github_username);
 
 
     return response.json({dev});
